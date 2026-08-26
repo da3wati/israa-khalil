@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>دعوة خطوبة | إسراء خليل</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#d7b66d;--cream:#fff8eb;--glass:rgba(255,255,255,.11)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#17100d;color:white;font-family:Cairo,sans-serif}
+#bg{position:fixed;inset:0;z-index:-2;background:linear-gradient(#21150f88,#100908b5),url("background.jpg") center/cover}
+#opening{position:fixed;inset:0;z-index:99;background:#100a08;cursor:pointer;transition:.9s;overflow:hidden}
+#opening.open{opacity:0;visibility:hidden;pointer-events:none}
+#opening img{width:100%;height:100%;object-fit:cover}
+.hint{position:absolute;bottom:7%;left:50%;transform:translateX(-50%);font:1.2rem Amiri;color:#f3dfb6;white-space:nowrap;text-shadow:0 2px 10px #000}
+#main{display:none}.section{padding:65px 14px;display:flex;justify-content:center}
+.glass{width:min(900px,100%);padding:clamp(25px,5vw,55px);border-radius:32px;background:var(--glass);border:1px solid #f3dca633;backdrop-filter:blur(12px);box-shadow:0 25px 70px #0005}
+.reveal{opacity:0;transform:translateY(25px);transition:.8s}.visible{opacity:1;transform:none}
+.orn{text-align:center;color:var(--gold);font-size:1.5rem;margin-bottom:20px}.quran,.welcome,.final{text-align:center;font-family:Amiri;line-height:2.15}.quran{font-size:clamp(1.3rem,3vw,2rem);font-weight:700}.ref{text-align:center;color:var(--gold);font-family:Amiri;margin:10px 0 25px}.welcome{font-size:1.4rem;color:#eadfce}
+.couple,.date{display:block;width:min(600px,100%);max-height:600px;object-fit:cover;margin:25px auto;border-radius:25px;border:1px solid #f3dca644}
+.title{text-align:center;font:700 clamp(2rem,5vw,3.2rem) Amiri;color:var(--cream);margin-bottom:25px}
+.time{text-align:center;font:700 clamp(3rem,8vw,5rem) Amiri;color:var(--gold-light,#f1dcae)}
+.time-sub{text-align:center;color:#eadfce;font-family:Amiri;font-size:1.2rem}
+.count{direction:ltr;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.box{text-align:center;padding:20px 8px;border-radius:20px;background:#ffffff12;border:1px solid #f3dca633}.num{display:block;font-size:clamp(2rem,6vw,3.4rem);font-weight:700}.lab{color:#f1dcae;font-size:.9rem}
+.location{text-align:center}.venue{font:2.5rem Amiri;color:var(--cream)}.qr{width:190px;height:190px;background:white;padding:9px;border-radius:16px;margin:25px auto 10px;display:block}.note{font:1.1rem Amiri;color:#f1dcae}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.gallery img{width:100%;height:310px;object-fit:cover;border-radius:20px;border:1px solid #f3dca633}.gallery img:last-child{grid-column:1/-1;height:390px}
+.nophoto{text-align:center}.icon{width:125px;height:125px;border:2px solid var(--gold);border-radius:50%;margin:auto;display:flex;align-items:center;justify-content:center;position:relative}.camera{width:52px;height:38px;border:2px solid #f1dcae;border-radius:9px;position:relative}.camera:before{content:"";position:absolute;width:20px;height:7px;left:14px;top:-9px;border:2px solid #f1dcae;border-bottom:0;border-radius:5px 5px 0 0}.camera:after{content:"";position:absolute;width:18px;height:18px;left:50%;top:50%;transform:translate(-50%,-50%);border:2px solid #f1dcae;border-radius:50%}.slash{position:absolute;width:112px;height:3px;background:#f1dcae;transform:rotate(-45deg);border-radius:5px}.nophoto h2{font:700 2.5rem Amiri;color:var(--cream)}.nophoto p{font:1.35rem Amiri;line-height:2.1;color:#eadfce}
+footer{text-align:center;padding:35px;font:1.3rem Amiri;color:#f1dcae}
+#musicBtn{display:none;position:fixed;left:18px;top:18px;z-index:100;width:52px;height:52px;border-radius:50%;border:1px solid #f3dca644;background:#17100dcc;color:#f1dcae}
+@media(max-width:700px){.section{padding:45px 12px}.glass{padding:25px 17px}.count{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr}.gallery img,.gallery img:last-child{grid-column:auto;height:330px}}
+</style>
+</head>
+<body>
+<div id="bg"></div>
+<audio id="music" loop preload="auto"><source src="music.mp3" type="audio/mpeg"></audio>
+
+<div id="opening"><img src="cover.jpg" alt="فتح الدعوة"><div class="hint">اضغط في أي مكان لفتح الدعوة</div></div>
+<button id="musicBtn">♫</button>
+
+<main id="main">
+<section class="section"><div class="glass reveal">
+<div class="orn">✦</div>
+<p class="quran">﴿وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنْفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ﴾</p>
+<p class="ref">[الروم: 21]</p>
+<p class="welcome">بكل الحب والفرح، يسعدنا أن نشارككم أجمل لحظات هذه المناسبة،<br>وننتظر حضوركم لتكتمل فرحتنا بوجودكم معنا.</p>
+<img class="couple" src="couple.jpg" alt="العروسين">
+</div></section>
+
+<section class="section"><div class="glass reveal">
+<h2 class="title">موعد الحفل</h2><img class="date" src="date.jpg" alt="تاريخ الحفل">
+<div class="time">14:00</div><div class="time-sub">الثانية بعد الظهر</div>
+</div></section>
+
+<section class="section"><div class="glass reveal">
+<h2 class="title">الوقت المتبقي للحفل</h2>
+<div class="count" id="count"><div class="box"><span class="num" id="d">00</span><span class="lab">يوم</span></div><div class="box"><span class="num" id="h">00</span><span class="lab">ساعة</span></div><div class="box"><span class="num" id="m">00</span><span class="lab">دقيقة</span></div><div class="box"><span class="num" id="s">00</span><span class="lab">ثانية</span></div></div>
+</div></section>
+
+<section class="section"><div class="glass reveal location">
+<h2 class="title">موقع الحفل</h2><div class="venue">قاعة الحفلات سعيدي</div>
+<img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=https%3A%2F%2Fmaps.app.goo.gl%2FSQeeEu7jUA3C7neW6" alt="QR موقع الحفل">
+<div class="note">امسح الرمز للوصول إلى موقع الحفل</div>
+</div></section>
+
+<section class="section"><div class="glass reveal">
+<h2 class="title">أجمل الذكريات</h2>
+<div class="gallery"><img src="gallery1.jpg" alt=""><img src="gallery2.jpg" alt=""><img src="gallery3.jpg" alt=""><img src="gallery4.jpg" alt=""><img src="gallery5.jpg" alt=""></div>
+</div></section>
+
+<section class="section"><div class="glass reveal nophoto">
+<div class="icon"><span class="camera"></span><span class="slash"></span></div>
+<h2>ممنوع التصوير</h2><p>نرجو منكم بكل لطف احترام خصوصية هذه المناسبة،<br>ودعونا نعيش أجمل لحظاتها بقلوبنا،<br>لتبقى ذكرياتنا الجميلة محفوظة في القلوب.</p>
+</div></section>
+
+<section class="section"><div class="glass reveal final"><div class="orn">♡ ✦ ♡</div><h2 class="title">ننتظر حضوركم بكل حب وفرح</h2><p>حضوركم يزيد فرحتنا جمالًا،<br>ووجودكم معنا يجعل هذه المناسبة أكثر بهجة.</p><footer>صُنع بكل حب 🤍</footer></div></section>
+</main>
+
+<script>
+const opening=document.getElementById("opening"),main=document.getElementById("main"),music=document.getElementById("music"),musicBtn=document.getElementById("musicBtn");
+let opened=false,playing=false;
+opening.addEventListener("click",function(){
+ if(opened)return; opened=true; opening.classList.add("open");
+ setTimeout(function(){opening.style.display="none";main.style.display="block";musicBtn.style.display="flex";music.play().then(()=>{playing=true;musicBtn.textContent="◼"}).catch(()=>{});initReveal()},900);
+});
+musicBtn.addEventListener("click",async()=>{if(playing){music.pause();playing=false;musicBtn.textContent="♫"}else{try{await music.play();playing=true;musicBtn.textContent="◼"}catch(e){}}});
+
+const eventDate=new Date("2026-10-01T14:00:00+02:00").getTime();
+function countdown(){let x=eventDate-Date.now();if(x<=0){document.getElementById("count").innerHTML='<div style="grid-column:1/-1;text-align:center;font:1.8rem Amiri;color:#fff8ed">حان وقت فرحتنا 🤍</div>';return}document.getElementById("d").textContent=String(Math.floor(x/86400000)).padStart(2,"0");document.getElementById("h").textContent=String(Math.floor(x%86400000/3600000)).padStart(2,"0");document.getElementById("m").textContent=String(Math.floor(x%3600000/60000)).padStart(2,"0");document.getElementById("s").textContent=String(Math.floor(x%60000/1000)).padStart(2,"0")}
+countdown();setInterval(countdown,1000);
+function initReveal(){const els=document.querySelectorAll(".reveal");if(!("IntersectionObserver" in window)){els.forEach(e=>e.classList.add("visible"));return}const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");o.unobserve(e.target)}}),{threshold:.1});els.forEach(e=>o.observe(e))}
+</script>
+</body>
+</html>
